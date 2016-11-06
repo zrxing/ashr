@@ -43,7 +43,7 @@ check_args = function(mixcompdist,df,prior,optmethod,gridmult,sebetahat,betahat)
   if (mixcompdist == "halfuniform" & !identical(prior, "nullbiased"))
     warning("Use of halfuniform without nullbiased prior can lead to misleading local false sign rates, and so is not recommended")
   
-  if (gridmult <= 1) stop("gridmult must be > 1")
+ # if (gridmult <= 1) stop("gridmult must be > 1")
   
   if ((length(sebetahat) != length(betahat)) & (length(sebetahat) != 1))
     stop("Error: sebetahat must have length 1, or same length as betahat")
